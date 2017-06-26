@@ -13,7 +13,6 @@ import SearchExercise from './components/SearchExercise.jsx';
 import Exercises from './components/Exercises.jsx';
 import CalorieOutput from './components/CalorieOutput.jsx';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,7 +39,6 @@ class App extends React.Component {
         'fencing'
       ],
       calorieOutput: 560
-
     };
     this.addFood = this.addFood.bind(this);
   }
@@ -65,8 +63,6 @@ class App extends React.Component {
     });
     console.log(this.state.items);
   }
-
-  /* handlefunction for adding exercise */
   addExercise(result) {
     var tempArray = this.state.exercises.slice();
     tempArray.push(result.exercises[0].name);
@@ -77,21 +73,6 @@ class App extends React.Component {
     });
   }
 
-  // componentDidMount() {
-  //   $.ajax({
-  //     url: '/items',
-  //     method: 'GET',
-  //     success: (data) => {
-  //       //console.log(data.foods)
-  //       this.setState({
-  //         items: data.foods
-  //       })
-  //     },
-  //     error: (err) => {
-  //       console.log('err', err);
-  //     }
-  //   });
-  // }
 
   render() {
     return (<div>
