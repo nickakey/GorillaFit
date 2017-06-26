@@ -11,8 +11,6 @@ var app = express();
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.json());
 
-<<<<<<< HEAD
-
 app.get('/foods', function (req, res) {
   var options = {
     method: 'POST',
@@ -93,10 +91,7 @@ app.get('/exercise', function(req, res) {
       res.send(body);
     }
   });
-
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
