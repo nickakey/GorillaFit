@@ -75,17 +75,6 @@ app.get('/exercise', function(req, res) {
   // res.send('<>hello from server/index.js<>');
 });
 
-<<<<<<< HEAD
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, function () {
-=======
-  //res.send('this is data from the server')
-  //res.status(200)
-  //********************TestCode*************************//
-  console.log(req.query.userFood);
-
->>>>>>> Updates to staging (#17)
   var options = {
     method: 'POST',
     url: 'https://trackapi.nutritionix.com/v2/natural/nutrients',
@@ -120,7 +109,7 @@ app.listen(PORT, function () {
     }
 
   });
-});
+};
 
 
 app.listen(3000, function () {
