@@ -7,10 +7,7 @@ const bcrypt = require('bcryptjs')
 Promise.promisifyAll(bcrypt);
 Promise.promisifyAll(authUtils);
 
-
 var app = express();
-
-
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.json());
 
@@ -52,7 +49,7 @@ app.get('/foods', function (req, res) {
 });
 
 app.post('/signup', (req, res)=>{
-  authUtils.isAlreadyUserAsync(req.body.userName)
+  authUtils.isNewUserAsync(req.body.userName)
   .then(()=>{
     return bcrypt.genSaltAsync(10)
   })
@@ -64,10 +61,9 @@ app.post('/signup', (req, res)=>{
   })
   .then(user=>{
     res.status(201);
-    res.end()
+    res.end();
   })
   .catch((err)=>{
-    console.log('this has been an error ', err)
     res.status(404);
     res.end()
   })
@@ -98,9 +94,10 @@ app.get('/exercise', function(req, res) {
     }
   });
 
-  // res.send('<>hello from server/index.js<>');
 });
 
+
+app.get('/foods', function (req, res) {
   var options = {
     method: 'POST',
     url: 'https://trackapi.nutritionix.com/v2/natural/nutrients',
