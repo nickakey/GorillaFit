@@ -43,7 +43,6 @@ app.get('/foods', function (req, res) {
       res.end();
 
     }
-
   });
 });
 
