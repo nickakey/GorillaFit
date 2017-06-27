@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
+var authUtils = require('./authUtils.js');
 
 var app = express();
 
