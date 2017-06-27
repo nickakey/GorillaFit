@@ -69,7 +69,6 @@ app.post('/signup', (req, res)=>{
   })
 })
 
-/*get request for exercise*/
 app.get('/exercise', function(req, res) {
   var options = {
     method: 'POST',
