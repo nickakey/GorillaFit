@@ -17,14 +17,22 @@ use gorilla_fit;
 -- ---
 
 DROP TABLE IF EXISTS `user`;
+<<<<<<< HEAD
 		
+=======
+    
+>>>>>>> database stuff
 CREATE TABLE `user` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(140) NOT NULL UNIQUE ,
   `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) COMMENT 'user';
+<<<<<<< HEAD
 	
+=======
+  
+>>>>>>> database stuff
 -- ---
 -- Table 'personal_information'
 -- user information table
@@ -52,7 +60,11 @@ CREATE TABLE `personal_information` (
 -- ---
 
 DROP TABLE IF EXISTS `food`;
+<<<<<<< HEAD
 		
+=======
+    
+>>>>>>> database stuff
 CREATE TABLE `food` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
   `userid` INTEGER NOT NULL,
@@ -79,7 +91,11 @@ CREATE TABLE `food` (
 -- ---
 
 DROP TABLE IF EXISTS `exercise`;
+<<<<<<< HEAD
 		
+=======
+    
+>>>>>>> database stuff
 CREATE TABLE `exercise` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
   `userid` INTEGER NOT NULL,
@@ -455,4 +471,9 @@ INSERT INTO `exercise` (`userid`,`user_input`,`calories`,`photo`,`category`) VAL
 
 
 
+<<<<<<< HEAD
 -- use mysql -u root < server/schema.sql to load dummy data
+=======
+-- use mysql -u root < server/schema.sql to load dummy data
+
+>>>>>>> database stuff
