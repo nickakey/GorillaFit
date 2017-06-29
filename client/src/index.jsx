@@ -9,11 +9,9 @@ import Nutrients from './components/Nutrients.jsx';
 import SignUp from './components/SignUp.jsx';
 import update from 'immutability-helper';
 
-/*Exercise Components*/
 import SearchExercise from './components/SearchExercise.jsx';
 import Exercises from './components/Exercises.jsx';
 import CalorieOutput from './components/CalorieOutput.jsx';
-
 
 class App extends React.Component {
   constructor(props) {
@@ -41,7 +39,6 @@ class App extends React.Component {
         'fencing'
       ],
       calorieOutput: 560
-
     };
     this.addFood = this.addFood.bind(this);
   }

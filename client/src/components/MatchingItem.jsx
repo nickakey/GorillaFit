@@ -26,9 +26,5 @@ class MatchingItem extends React.Component {
       </div>
     );
   }
-
 }
-
-
-
 export default MatchingItem;
