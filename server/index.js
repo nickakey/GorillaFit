@@ -75,7 +75,6 @@ passport.deserializeUser(function(id, done) {
 
 app.post('/login', passport.authenticate('local'), 
   ((req, res)=>{
-    req.flash('info', 'Hi there!');
     res.status(201);
     res.json(req.user[0].history);
     res.end();
