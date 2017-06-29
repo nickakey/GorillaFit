@@ -39,6 +39,7 @@ class App extends React.Component {
         'fencing'
       ],
       calorieOutput: 560
+
     };
     this.addFood = this.addFood.bind(this);
   }
@@ -75,16 +76,18 @@ class App extends React.Component {
 
 
   render() {
-    return (<div>
-      <Search addFood={this.addFood} />
-      <Items breakfast={this.state.items.breakfast} lunch={this.state.items.lunch} dinner={this.state.items.dinner} snack={this.state.items.snack} />
-      <Calories totalCalories={this.state.totalCalories} />
-      <Nutrients fat={this.state.fat} carbs={this.state.carbs} protein={this.state.protein} />
-      <hr />
-      <SearchExercise addExercise={this.addExercise.bind(this)} />
-      <Exercises exercises={this.state.exercises} />
-      <CalorieOutput calorieOutput={this.state.calorieOutput} />
-    </div >);
+    return (
+      <div>
+        <Search addFood={this.addFood} />
+        <Items breakfast={this.state.items.breakfast} lunch={this.state.items.lunch} dinner={this.state.items.dinner} snack={this.state.items.snack} />
+        <Calories totalCalories={this.state.totalCalories} />
+        <Nutrients fat={this.state.fat} carbs={this.state.carbs} protein={this.state.protein} />
+        <hr />
+        <SearchExercise addExercise={this.addExercise.bind(this)} />
+        <Exercises exercises={this.state.exercises} />
+        <CalorieOutput calorieOutput={this.state.calorieOutput} />
+      </div >
+    );
   }
 }
 
