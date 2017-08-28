@@ -2,6 +2,8 @@
 
 > On the go Calorie Counter  
 
+![alt text](https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=y1BKgAIUyLAcJf5C0k1%2BqsoDtmU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdfyG6ecXdeufwuQ4RcCUclFAwfPKgQjHnD5W5eIjmKd9wjpS2LI24ZxUBbFImi24)
+
 ## Team
 
   - Gunpreet Singh
